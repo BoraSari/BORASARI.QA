@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="InsiderTestSuits">
+   <listeners>
+       <listener class-name="org.testng.reporters.EmailableReporter2"></listener>
+   </listeners>
+    <packages>
+        <package name="InsiderTestPackages">
+            <include name="InsiderTests">
+                <test name="InsiderTests">
+                    <classes>
+                        <class name="InsiderTests.InsiderTests"></class>
+                    </classes>
+                </test>
+            </include>
+        </package>
+    </packages>
+</suite>
